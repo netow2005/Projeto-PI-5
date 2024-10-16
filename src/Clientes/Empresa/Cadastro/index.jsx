@@ -58,62 +58,117 @@ function CadastroUsuario() {
             Cadastre-se
           </Heading>
           <form onSubmit={handleSubmit} style={{ width: '100%' }}>
-            <FormControl isRequired mb={4}>
-              <FormLabel>Usuário</FormLabel>
+            <FormControl p={4} border="1px solid" borderColor="gray.200" borderRadius="md" position="relative" mb={4}>
+              <FormLabel
+                position="absolute"
+                top="-10px"
+                left="10px"
+                bg="white"
+                px={2}
+                fontSize="sm"
+                color="black"
+              >
+                Usuario
+              </FormLabel>
               <Input 
                 type="text" 
                 name="username" 
                 value={formData.username} 
                 onChange={handleChange} 
-                placeholder="Digite seu nome de usuário" 
+                placeholder="Digite seu usuário" 
+                variant="unstyled"
               />
             </FormControl>
 
-            <FormControl isRequired mb={4}>
-              <FormLabel>Telefone</FormLabel>
+            <FormControl p={4} border="1px solid" borderColor="gray.200" borderRadius="md" position="relative" mb={4} >
+              <FormLabel
+                position="absolute"
+                top="-10px"
+                left="10px"
+                bg="white"
+                px={2}
+                fontSize="sm"
+                color="black"
+              >
+                Telefone
+              </FormLabel>
               <Input 
                 type="tel" 
                 name="phone" 
                 value={formData.phone} 
                 onChange={handleChange} 
                 placeholder="Digite seu telefone" 
+                variant="unstyled"
               />
             </FormControl>
 
-            <FormControl isRequired mb={4}>
-              <FormLabel>Email</FormLabel>
+            <FormControl p={4} border="1px solid" borderColor="gray.200" borderRadius="md" position="relative" mb={4} >
+              <FormLabel
+                position="absolute"
+                top="-10px"
+                left="10px"
+                bg="white"
+                px={2}
+                fontSize="sm"
+                color="black"
+              >
+                Email
+              </FormLabel>
               <Input 
                 type="email" 
                 name="email" 
                 value={formData.email} 
                 onChange={handleChange} 
                 placeholder="Digite seu email" 
+                variant="unstyled"
               />
             </FormControl>
 
-            <FormControl isRequired mb={4}>
-              <FormLabel>Confirmar Email</FormLabel>
+            <FormControl p={4} border="1px solid" borderColor="gray.200" borderRadius="md" position="relative" mb={4} >
+              <FormLabel
+                position="absolute"
+                top="-10px"
+                left="10px"
+                bg="white"
+                px={2}
+                fontSize="sm"
+                color="black"
+              >
+                Confirmar Email
+              </FormLabel>
               <Input 
                 type="email" 
                 name="confirmEmail" 
                 value={formData.confirmEmail} 
                 onChange={handleChange} 
                 placeholder="Confirme seu email" 
+                variant="unstyled"
               />
             </FormControl>
 
-            <FormControl isRequired mb={6}>
-              <FormLabel>Senha</FormLabel>
+            <FormControl p={4} border="1px solid" borderColor="gray.200" borderRadius="md" position="relative" mb={6} >
+              <FormLabel
+                position="absolute"
+                top="-10px"
+                left="10px"
+                bg="white"
+                px={2}
+                fontSize="sm"
+                color="black"
+              >
+                Senha
+              </FormLabel>
               <Input 
                 type="password" 
                 name="password" 
                 value={formData.password} 
                 onChange={handleChange} 
                 placeholder="Digite sua senha" 
+                variant="unstyled"
               />
             </FormControl>
 
-            <Button type="submit" colorScheme="red" width="100%" borderRadius="md" size={'md'}>
+            <Button type="submit" colorScheme="red" width="100%" borderRadius="lg" size={'md'}>
               Cadastre-se
             </Button>
           </form>
