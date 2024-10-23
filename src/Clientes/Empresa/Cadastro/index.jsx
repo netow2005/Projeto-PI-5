@@ -151,7 +151,7 @@ function CadastroUsuario() {
                 position="absolute"
                 top="-10px"
                 left="10px"
-                bg="white"
+                bg= "#FFFFFF"
                 px={2}
                 fontSize="sm"
                 color="black"
