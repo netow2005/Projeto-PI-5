@@ -84,7 +84,7 @@ function LoginEmpresa() {
                                 </FormHelperText>
                             </FormControl>
                             <Flex justifyContent="center">
-                                <Link to="#">
+                                <Link to="/contato">
                                     <Button
                                         borderRadius="1em"
                                         type="submit"
@@ -93,6 +93,7 @@ function LoginEmpresa() {
                                         width="8em"
                                         height="2em"
                                         size="lg"
+                                     
                                     >
                                         Entrar
                                     </Button>
