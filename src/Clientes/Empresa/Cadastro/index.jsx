@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Input, FormControl, FormLabel, Button, Heading, Grid, Box, Image, VStack } from '@chakra-ui/react';
-import imgCadastro from "/src/imagem/img-cadastro.png";
+import imgCadastro from "/src/imagens/img-cadastro.png";
 
 function CadastroUsuario() {
   const [formData, setFormData] = useState({
