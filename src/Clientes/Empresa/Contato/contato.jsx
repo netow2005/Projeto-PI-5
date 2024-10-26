@@ -12,7 +12,7 @@ import {
   chakra,
   Image,
 } from "@chakra-ui/react";
-import { FaUserAlt } from "npm install react-icons --save";
+import { FaUserAlt } from "react-icons/fa";
 import imgIconeChat from "/src/imagens/Ellipse.png"; 
 import { CiSearch } from "react-icons/ci";
 
