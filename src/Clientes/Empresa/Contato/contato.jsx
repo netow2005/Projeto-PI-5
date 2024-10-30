@@ -21,32 +21,34 @@ const CFaUserAlt = chakra(FaUserAlt);
 function Contato() {
   return (
     <Flex
-      flexDirection="row"
+      flexDirection={{ base: "column", md: "row" }}
       width="100vw"
       height="100vh"
       backgroundColor="gray.200"
       p={3}
     >
-      {/* coluna da esquerda */}
+      {/* Coluna da Esquerda */}
       <Box
-        width="30%"
+        width={{ base: "100%", md: "35%", lg: "30%" }}
+        maxWidth="400px"
         p={4}
         backgroundColor="white"
         borderRadius="lg"
         boxShadow="md"
-        mr={4}
+        mr={{ base: 0, md: 4 }}
+        mb={{ base: 4, md: 0 }}
       >
         <Heading as="h2" size="lg" color="red.400" ps={4} mb={6}>
           Contatos
         </Heading>
         <InputGroup mb={9}>
           <InputLeftElement pointerEvents="none">
-            <CiSearch color="gray.500" /> {/* Adicionando o ícone da lupa aqui */}
+            <CiSearch color="gray.500" />
           </InputLeftElement>
           <Input type="text" placeholder="Pesquisar" />
         </InputGroup>
         <Stack spacing={4}>
-          {/* lista de contatos*/}
+          {/* Lista de Contatos */}
           <Flex
             p={6}
             borderRadius="lg"
@@ -64,7 +66,6 @@ function Contato() {
             />
             <Text ml={3}>Jonas Brother</Text>
           </Flex>
-          {/* contato */}
           <Flex
             p={6}
             borderRadius="lg"
@@ -85,7 +86,7 @@ function Contato() {
         </Stack>
       </Box>
 
-      {/* coluna da direita */}
+      {/* Coluna da Direita */}
       <Box
         flex="1"
         backgroundColor="white"
@@ -129,9 +130,14 @@ function Contato() {
             <Text fontWeight="bold">Chassi: </Text>
             <Text>4Ke PvrkLn xh ve1275</Text>
           </Box>
-
-          <Flex justifyContent="flex-start" mt={6}>
-            <Button colorScheme="red" size="md" mr={4}>
+          
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            justifyContent={{ base: "center", md: "flex-start" }}
+            mt={6}
+            gap={4}  
+          >
+            <Button colorScheme="red" size="md" mb={{ base: 2, md: 0 }}>
               Verificar Histórico
             </Button>
             <Button colorScheme="red" size="md">
@@ -140,6 +146,17 @@ function Contato() {
           </Flex>
         </Stack>
       </Box>
+
+      <style>
+        {`
+          @media (max-width: 1262px) {
+            .chakra-button {
+              width: 100%;
+              margin-bottom: 10px;
+            }
+          }
+        `}
+      </style>
     </Flex>
   );
 }
