@@ -905,6 +905,7 @@ caniuse-lite@^1.0.30001663:
     "@emotion/react" "^11.13.3"
     "@emotion/styled" "^11.13.0"
     caxangaautocenter "file:"
+    fa "^1.0.1"
     framer-motion "^11.11.9"
     react "^18.3.1"
     react-dom "^18.3.1"
@@ -1419,6 +1420,11 @@ esutils@^2.0.2:
   version "2.0.3"
   resolved "https://registry.npmjs.org/esutils/-/esutils-2.0.3.tgz"
   integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
+
+fa@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/fa/-/fa-1.0.1.tgz"
+  integrity sha512-9uU7yoeKcoXvONbZuoRAEzIz/v80RlS6QfN4sWWyrpy5rScGrDPxpeZ3AV6y+jssjFJUEQoZiR5lgXBLrtAHKQ==
 
 fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"

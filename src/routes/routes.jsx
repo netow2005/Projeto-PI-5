@@ -11,7 +11,7 @@ function AppRoutes() {
       <Routes>
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/" element={<Login />} />
-        <Route path="/Agendamento" element={<Agendamento />} />
+        <Route path="/gendamento" element={<Agendamento />} />
         <Route path="/contato" element={<Contato />} />
         </Routes>
         </BrowserRouter>
