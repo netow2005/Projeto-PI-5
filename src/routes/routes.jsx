@@ -9,9 +9,9 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/cadastro" element={<Cadastro />} />
-        <Route path="/" element={<Login />} />
-        <Route path="/gendamento" element={<Agendamento />} />
+        <Route path="/" element={<Cadastro />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/agendamento" element={<Agendamento />} />
         <Route path="/contato" element={<Contato />} />
         </Routes>
         </BrowserRouter>

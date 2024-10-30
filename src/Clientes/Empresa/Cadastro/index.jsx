@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 import { Input, FormControl, FormLabel, Button, Heading, Grid, Box, Image, VStack } from '@chakra-ui/react';
 import imgCadastro from "/src/imagens/img-cadastro.png";
 
@@ -53,6 +54,7 @@ function CadastroUsuario() {
         p={8} 
         height="100vh"
       >
+        
         <VStack spacing={6} maxW="400px" width="100%">
           <Heading as="h2" size="lg" color="#FA6565" textAlign="center">
             Cadastre-se
@@ -167,10 +169,11 @@ function CadastroUsuario() {
                 variant="unstyled"
               />
             </FormControl>
-
+            <Link to="/login">
             <Button type="submit" colorScheme="red" width="100%" borderRadius="lg" size={'md'}>
               Cadastre-se
             </Button>
+            </Link>
           </form>
         </VStack>
       </Box>
